@@ -12,7 +12,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 SEED = 0
 BATCH_SIZE = 64# minibatch size
-GAMMA = 0.99# discount factor
+GAMMA = 0.995# discount factor
 ACTION_SIZE = 4
 UPDATE_EVERY = 4
 TAU = 0.001# for soft update of target parameters
@@ -20,7 +20,7 @@ LR = 5e-4# learning rate
 CAPACITY_MEMORY = 100000# replay buffer size
 
 #PriorizedExperienceReplay hyperparameters
-BETA=0.05
+BETA=0.04
 ALPHA=0.1
 
 
